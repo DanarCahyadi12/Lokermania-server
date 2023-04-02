@@ -21,6 +21,6 @@ app.use(express.json())
 app.use("/",router)
 
 
-app.listen(process.env.SERVER_PORT,()=> {
+app.listen(process.env.PORT || 3000,()=> {
     console.log("SERVER IS RUNNING")
 })
