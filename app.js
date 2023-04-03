@@ -12,10 +12,7 @@ app.use(fileUpload({
     createParentPath : true
     
 }));
-app.use(cors({
-    credentials : true,
-    origin : "http://localhost:3000"
-}));
+app.use(cors());
 
 app.use(urlencoded({extended:true}))
 app.use(cookieParser())
