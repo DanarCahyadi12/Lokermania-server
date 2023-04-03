@@ -5,6 +5,8 @@ const cookieParser = require("cookie-parser")
 const fileUpload = require("express-fileupload")
 const cors = require("cors")
 const app = express()
+
+require("dotenv").config()
 const PORT = process.env.PORT || 3000;
 app.use(fileUpload({
     createParentPath : true
