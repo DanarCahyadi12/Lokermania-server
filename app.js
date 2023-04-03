@@ -21,6 +21,6 @@ app.use(express.json())
 app.use("/",router)
 
 
-app.listen(PORT || 3000,()=> {
-    console.log("SERVER IS RUNNING")
+app.listen(PORT,()=> {
+    console.log("SERVER IS RUNNING ", PORT )
 })
