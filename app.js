@@ -17,11 +17,7 @@ app.use(cors());
 app.use(urlencoded({extended:true}))
 app.use(cookieParser())
 app.use(express.json()) 
-
-app.get("/",(req,res) => {
-    res.send("HELLO ROLD")
-})
-// app.use("/",router)
+app.use("/",router)
 
 
 app.listen(PORT,()=> {
